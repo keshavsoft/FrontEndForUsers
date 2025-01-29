@@ -1,9 +1,12 @@
 import ConfigJson from '../../../../../Config.json' with {type: 'json'};
+const CommonKeyName = "BranchName";
 
 let StartFunc = () => {
     let LocalUserName = jFLocalyourUsername();
+    //added new BranOrders for all orders tables
 
-    localStorage.setItem("BranchName", LocalUserName)
+    localStorage.setItem(CommonKeyName, `BranOrders${LocalUserName}`);
+
     window.location.href = ConfigJson.RedirectToUrl;
 };
 
