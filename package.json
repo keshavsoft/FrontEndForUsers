@@ -1,12 +1,13 @@
 {
   "name": "frontendforusers",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "vite html files for user management",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "Users": "vite build --config src/Login/LoginBin/Users/vite.config.js"
+    "Users": "vite build --config src/Login/LoginBin/Users/vite.config.js",
+    "build": "vite build"
   },
   "author": "",
   "license": "ISC",
